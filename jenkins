@@ -16,6 +16,7 @@ stages {
   steps {
       bat "cd test"
       bat "mvn compile"
+      echo "hey"
     }
 }
     stage('test')
