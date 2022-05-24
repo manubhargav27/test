@@ -9,14 +9,13 @@ stages {
     when { expression { MY_FILE == 'false' } }
     steps {
           bat "git clone https://github.com/manubhargav27/test.git"
-          print "pulled the code"
+          print "pull the code"
     }
 }
    stage('compile') {
   steps {
       bat "cd test"
       bat "mvn compile"
-      echo "hey"
     }
 }
     stage('test')
